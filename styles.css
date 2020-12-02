@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+.content-title {
+  text-align: center;
+}
+
+.inputs {
+  text-align: center;
+  padding-left: 0.5rem;
+}
