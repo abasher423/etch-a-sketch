@@ -4,30 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-A-Sketch</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
     <header>
         <div class="content-title">
             <h1>Etch a Sketch</h1>
         </div>
-
-        <section>
-            <div class="inputs">
-                <button class="reset">Reset</button>
-                <button class="black">Black</button>
-                <button class="rgb">RGB</button>
-                <input type="color" id="col">
-                <input type="range" id="rng">
-            </div>
-        </section>
-
-        <section>
-            <div class="main-div">
-
-            </div>
-        </section>
     </header>
+
+    <section>
+        <div class="inputs">
+            <button class="reset">Reset</button>
+            <button class="black">Black</button>
+            <button class="rgb">RGB</button>
+            <input type="color" id="col">
+            <input type="range" id="rng">
+        </div>
+    </section>
+
+    <section id='canvas'>
+        <div></div>
+    </section>
 
     <script src="app.js"></script>
 </body>
