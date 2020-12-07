@@ -85,3 +85,12 @@ function Reset(){
     }
 }
 
+// event listeners
+blackBtn.addEventListener('click', ()=>{
+    SetSquareColor('black')
+})
+resetBtn.addEventListener('click', Reset)
+rgbBtn.addEventListener('click', Rainbow)
+colorWell.addEventListener("change", updateFirst, false);
+colorWell.addEventListener("input", updateFirst, false);
+slider.addEventListener('change', UpdateGrid)
