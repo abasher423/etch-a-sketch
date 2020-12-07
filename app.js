@@ -55,3 +55,25 @@ function SetSquareColor(divColor){
     }
 }
 
+// function assigns cells background color a random color from the array
+function Rainbow(){
+    let cells = grid.children
+    for (let i=0; i<cells.length; i++){
+        cells[i].addEventListener('mouseenter', ()=>{
+            cells[i].style.backgroundColor = colors[Math.floor(Math.random() * colors.length)]
+         })
+    }
+}
+
+// function which updates or changes cells color when color picker is used
+function updateFirst(event) {
+    let cells = grid.children
+        for (let i=0; i<cells.length; i++){
+            cells[i].addEventListener('mouseenter', ()=>{
+            if (cells[i]){
+                cells[i].style.backgroundColor = event.target.value
+            }
+        })
+    }
+}
+
