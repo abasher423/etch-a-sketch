@@ -94,3 +94,6 @@ rgbBtn.addEventListener('click', Rainbow)
 colorWell.addEventListener("change", updateFirst, false);
 colorWell.addEventListener("input", updateFirst, false);
 slider.addEventListener('change', UpdateGrid)
+
+// initialises grid to 16x16
+CreateGrid(16)
