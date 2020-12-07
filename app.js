@@ -77,3 +77,11 @@ function updateFirst(event) {
     }
 }
 
+// function to reset all cells back to white
+function Reset(){
+    let cells = grid.children
+    for (let i=0; i<cells.length; i++){
+        cells[i].style.backgroundColor = 'white'
+    }
+}
+
