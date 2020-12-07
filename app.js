@@ -38,3 +38,20 @@ function UpdateGrid(){
     SetSquareColor('white')
 }
 
+// function which removes all child nodes (used when updating grid)
+function RemoveAllChildNodes(parent){
+    while (parent.firstChild){
+        parent.removeChild(parent.firstChild)
+    }
+}
+
+// function to set the cells background color
+function SetSquareColor(divColor){
+    let cells = grid.children
+    for (let i=0; i<cells.length; i++){
+        cells[i].addEventListener('mouseenter', ()=>{
+            cells[i].style.backgroundColor = divColor
+        })
+    }
+}
+
