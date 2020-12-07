@@ -27,15 +27,33 @@ button:hover {
   background-color: red;
 }
 
-#canvas {
-  width: 585px;
-  height: 585px;
+#grid {
+  width: 485px;
+  height: 485px;
   margin: 0 auto;
   display: grid;
   outline: solid black;
   background-color: white;
 }
 
-#canvas div {
+#grid div {
   outline: 0.01px solid black;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  color: yellow;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.social {
+  text-decoration: none;
+}
+
+.fab {
+  color: yellow;
 }
