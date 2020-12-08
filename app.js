@@ -43,7 +43,7 @@ const SetCellColor = event => {
 }
 
 // function assigns cells background color a random color from the array
-function Rainbow(){
+const Rainbow = () => {
     const colors = [
         'red',
         'orange',
@@ -57,7 +57,7 @@ function Rainbow(){
 }
 
 // function which updates or changes cells color when color picker is used
-function updateFirst(event) {
+const updateFirst = event => {
     let cells = grid.children
     for (let cell of cells){
         cell.addEventListener('mouseover', ()=>{
@@ -69,7 +69,7 @@ function updateFirst(event) {
 }
 
 // function to reset all cells back to white
-function Reset(){
+const Reset = () => {
     document.querySelectorAll('#grid div').forEach(cell => cell.style.backgroundColor = 'white')
 }
 
